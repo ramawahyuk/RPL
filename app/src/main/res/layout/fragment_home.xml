@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e4e3e3">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Tebing Keraton -->
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_tebing"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="5dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/btn_tebingkeraton"
+                    android:src="@drawable/tebing"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop"
+                    android:clickable="true"
+                    android:onClick="img_tebingkeraton"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_transStudio"
+                    android:text="Taman Wisata Tebing Keraton di Dago Pakar, Jawa Barat"
+                    android:layout_margin="10dp"
+                    android:textSize="14sp"
+                    android:layout_below="@id/btn_tebingkeraton"/>
+
+                <Button
+                    android:id="@+id/iv_favoriteTranstudio"
+                    android:background="@drawable/ic_unfavorite"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="10dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp" />
+
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <!-- Lereng Anteng -->
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_lerenganteng"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="5dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/lerenganteng"
+                    android:src="@drawable/lerenganteng"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_bukitMoko"
+                    android:text="Tujuan wisata di Cimenyan, Bandung, Jawa Barat"
+                    android:layout_margin="10dp"
+                    android:textSize="14sp"
+                    android:layout_below="@id/lerenganteng"/>
+
+                <Button
+                    android:id="@+id/iv_favoriteMoko"
+                    android:background="@drawable/ic_unfavorite"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="10dp"
+                    android:scaleType="fitXY"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp" />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <!-- Tahura -->
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_tahura"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/tahura"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/tahura" />
+
+                <TextView
+                    android:id="@+id/tv_cikaPundung"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tahura"
+                    android:layout_margin="10dp"
+                    android:text="Taman Hutan Raya Ir.H.Djuanda di Dago Pakar, Jawa Barat"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/iv_favoriteCikapundung"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/ic_unfavorite"
+                    android:scaleType="fitXY" />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <!-- Bukit Moko -->
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_moko"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/moko"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/moko" />
+
+                <TextView
+                    android:id="@+id/t_moko"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/moko"
+                    android:layout_margin="10dp"
+                    android:text="Bukit Moko Bukit Bintang"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/iv_moko"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/ic_unfavorite"
+                    android:scaleType="fitXY" />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <!-- Floating Market Lembang -->
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_floating"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/floating"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/floating" />
+
+                <TextView
+                    android:id="@+id/t_floating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/floating"
+                    android:layout_margin="10dp"
+                    android:text="Floating Market Lembang"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/iv_floating"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/ic_unfavorite"
+                    android:scaleType="fitXY" />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <!-- Stone Cafe Bandung -->
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_stone"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/stone"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/stone" />
+
+                <TextView
+                    android:id="@+id/t_stone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/stone"
+                    android:layout_margin="10dp"
+                    android:text="the Stone Cafe bandung"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/iv_stone"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/ic_unfavorite"
+                    android:scaleType="fitXY" />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <!-- Lawang Wangi  -->
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_lawang"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/lawang"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/lawang" />
+
+                <TextView
+                    android:id="@+id/t_lawang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/lawang"
+                    android:layout_margin="10dp"
+                    android:text="Lawang Wangi WorkSpace"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/iv_lawang"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/ic_unfavorite"
+                    android:scaleType="fitXY" />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <!-- Cafe Dpakar  -->
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_dpakar"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/dpakar"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/dpakar" />
+
+                <TextView
+                    android:id="@+id/t_dpakar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/dpakar"
+                    android:layout_margin="10dp"
+                    android:text="Cafe Dpakar Bandung"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/iv_dpakar"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/ic_unfavorite"
+                    android:scaleType="fitXY" />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <!-- Dago Terrace Resto & Cafe  -->
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_Sierra"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/Sierra"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/sierra" />
+
+                <TextView
+                    android:id="@+id/t_Sierra"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/Sierra"
+                    android:layout_margin="10dp"
+                    android:text="Dago Terrace Resto and Cafe"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/iv_Sierra"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/ic_unfavorite"
+                    android:scaleType="fitXY" />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <!-- Kambing Soon Barbecue Restaurant  -->
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_kambing"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/kambing"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/kambing" />
+
+                <TextView
+                    android:id="@+id/t_kambing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/kambing"
+                    android:layout_margin="10dp"
+                    android:text="Kambing Soon Barbecue Restaurant"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/iv_kambing"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/ic_unfavorite"
+                    android:scaleType="fitXY" />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+
+</ScrollView>

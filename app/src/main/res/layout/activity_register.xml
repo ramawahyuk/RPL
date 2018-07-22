@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register"
+    android:background="@color/grey"
+    >
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/grey"
+        tools:context=".Register"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+
+        <EditText
+            android:id="@+id/field_email_regis"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/rounded"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Email"
+            android:inputType="textPersonName"
+            tools:layout_editor_absoluteX="30dp"
+            tools:layout_editor_absoluteY="235dp" />
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="110dp"
+            app:srcCompat="@drawable/ic_account_circle_blue"
+            tools:layout_editor_absoluteX="130dp"
+            tools:layout_editor_absoluteY="77dp" />
+
+        <EditText
+            android:id="@+id/field_pass_regis"
+            android:layout_width="300dp"
+            android:layout_height="27dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="196dp"
+            android:background="@drawable/rounded"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Password"
+            android:inputType="textPassword"
+            tools:layout_editor_absoluteX="30dp"
+            tools:layout_editor_absoluteY="267dp" />
+
+        <EditText
+            android:id="@+id/field_name"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="235dp"
+            android:background="@drawable/rounded"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Name"
+            tools:layout_editor_absoluteX="30dp"
+            tools:layout_editor_absoluteY="301dp" />
+
+        <EditText
+            android:id="@+id/field_alamat"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="160dp"
+            android:background="@drawable/rounded"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Alamat"
+            tools:layout_editor_absoluteX="30dp"
+            tools:layout_editor_absoluteY="404dp" />
+
+        <EditText
+            android:id="@+id/field_jk"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="124dp"
+            android:background="@drawable/rounded"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Jenis Kelamin"
+            tools:layout_editor_absoluteX="30dp"
+            tools:layout_editor_absoluteY="369dp" />
+
+        <EditText
+            android:id="@+id/field_kontak"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="87dp"
+            android:background="@drawable/rounded"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="No.kontak"
+            tools:layout_editor_absoluteX="30dp"
+            tools:layout_editor_absoluteY="334dp" />
+
+        <Button
+            android:id="@+id/btn_regis"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="38dp"
+            android:background="@drawable/rounded_btn"
+            android:onClick="btn_regis_click"
+            android:text="register"
+            tools:layout_editor_absoluteX="130dp"
+            tools:layout_editor_absoluteY="453dp" />
+
+        <TextView
+            android:id="@+id/textViewSignIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="12dp"
+            android:gravity="center"
+            android:text="Sudah Punya akun ? klik disini"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="512dp" />
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
